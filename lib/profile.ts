@@ -12,7 +12,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/harold-johnson-8293a3305",
   // To show a portrait instead of the "HJ" monogram, add a transparent PNG
   // (about 737x678) to /public and set its path here, e.g. "/avatar.png".
-  avatar: null as string | null,
+  avatar: "/avatar.png" as string | null,
   summary:
     "Software, systems and test engineer with decades of experience across medical devices, defense/aerospace, simulation and test automation — now applying that engineering discipline to AI model evaluation, prompt testing and data quality.",
 };

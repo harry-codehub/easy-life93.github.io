@@ -7,8 +7,9 @@ import { FaDatabase, FaJava, FaJs, FaPython } from "react-icons/fa";
 import type { IconType } from "react-icons";
 import { SiC, SiCplusplus, SiR } from "react-icons/si";
 
+import Avatar from "@/components/Avatar";
 import Circles from "@/components/Circles";
-import { experience } from "@/lib/profile";
+import { experience, profile } from "@/lib/profile";
 import { fadeIn } from "@/variants";
 
 type AboutInfoItem = {
@@ -94,6 +95,18 @@ const About = () => {
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-y-auto xl:overflow-visible">
       <Circles />
+
+      {profile.avatar && (
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="hidden xl:flex absolute bottom-0 -left-92.5"
+        >
+          <Avatar />
+        </motion.div>
+      )}
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">

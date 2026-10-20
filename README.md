@@ -18,7 +18,7 @@ Built with Next.js 16, Tailwind CSS 4 and Framer Motion, based on the
 ## Editing content
 
 - **Name, email, LinkedIn, summary and work history:** `lib/profile.ts`
-- **Portrait:** add a transparent PNG (about 737×678) to `public/` and set `avatar` in `lib/profile.ts`, e.g. `avatar: "/avatar.png"`. Until then an "HJ" monogram is shown.
+- **Portrait:** `public/avatar.png` (737×678 transparent PNG, stylized from a headshot). Replace the file to change it, or set `avatar: null` in `lib/profile.ts` to show the "HJ" monogram instead.
 - **Skills / platforms tabs and stats:** `app/about/page.tsx`
 - **Services:** `components/ServiceSlider.tsx`
 - **Work highlights:** `components/WorkSlider.tsx`
